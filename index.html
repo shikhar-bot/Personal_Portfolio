@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--================= UNICONS ==================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!--===================== SWIPER CSS =======================-->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+
+    <!--================= CSS ==================-->
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Portfolio | Shikhar gupta</title>
+</head>
+<body>
+    <!--===================== HEADER ======================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo"> Shikhar Gupta </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="uil uil-estate nav__icon"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i>
+                            About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i>
+                            Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#works" class="nav__link">
+                            <i class="uil uil-briefcase-alt nav__icon"></i>
+                            Works
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i>
+                            Contact me
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+                <!--Theme change button-->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--====================== MAIN ======================-->
+    <main class="main">
+        <!--=================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/shikhar-gupta-1050b41ba/" target="_blank" class="home__social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+
+                        <a href="https://leetcode.com/shikhar0902/" target="_blank" class="home__social-icon">
+                            <i class="uil uil-brackets-curly"></i>
+                        </a>
+
+                        <a href="https://github.com/shikhar-bot" target="_blank" class="home__social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__img">
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+
+                                // PROFILE IMAGE FOR HOME SECTION
+                                <image class="home__blob-img" x='18' y='10' xlink:href="img/profile1.png">
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">Hi, I'm Shikhar</h1>
+                        <h3 class="home__subtitle"> Frontend Developer & Programmer </h3>
+                        <p class="home__description">A Front-end Web Developer and a Programmer
+                            passionate about creating interactive templates and web applications
+                            and solving problems with the power of DSA.
+                        </p>
+                        <a href="#contact" class="button button--flex">
+                            Say Hello
+                            <i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Scroll down</span>
+                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--=================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 class="section__title">About me</h2>
+            <span class="section__subtitle">My introduction</span>
+
+            <div class="about__container container grid">
+                <img src="img/about.png" alt="" class="about__img">
+
+                <div class="about__data">
+                    <p class="about__description">
+                        I write code, create templates, made bad jokes,
+                        and always keep up to date with new technologies.
+                    </p>
+
+                    
+                <!--  <div class="about__info">
+                        <div>
+                            <span class="about__info-title">00</span>
+                            <span class="about__info-name">Years <br> experience</span>
+                        </div>
+                        <div>
+                            <span class="about__info-title">00</span>
+                            <span class="about__info-name">Completed <br> projects</span>
+                        </div>
+                        <div>
+                            <span class="about__info-title">00</span>
+                            <span class="about__info-name">Companies <br> worked</span>
+                        </div>
+                    </div> -->
+                    
+
+                    <div class="about__buttons">
+                        <a download="" href="pdf/Shikhar_Gupta_Resume5.pdf" class="button button--flex">
+                            Download Resume
+                            <i class="uil uil-download-alt button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">My technical level</span>
+
+            <div class="skills__container container grid">
+                <div>
+                    <!--=================== SKILLS 1 ====================-->
+                    <div class="skills__content skills__open">
+                        <div class="skills__header">
+                            <i class="uil uil-arrow skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Frontend developer</h1>
+                                <span class="skills__subtitle">More than 1 year</span>
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__html"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__css"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Tailwind CSS</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__tailwind"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Bootstrap</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__bootstrap"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">JavaScript</h3>
+                                    <span class="skills__number">60%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__js"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">React</h3>
+                                    <span class="skills__number">40%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__react"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--=================== SKILLS 2 ====================-->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-brackets-curly skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Coding</h1>
+                                <span class="skills__subtitle">More than 2 years</span>
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Java</h3>
+                                    <span class="skills__number">95%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__java"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Data Structures & Algorithms</h3>
+                                    <span class="skills__number">85%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__dsa"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Problem Solving</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__ps"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <!--=================== SKILLS 3 ====================-->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-desktop skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Other skills</h1>
+                                <span class="skills__subtitle">More than 1 year</span>
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Git/Github</h3>
+                                    <span class="skills__number">60%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__git"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">VS code</h3>
+                                    <span class="skills__number">85%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__vscode"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Android Studio</h3>
+                                    <span class="skills__number">60%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__android"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=================== QUALIFICATION ====================-->
+
+        <!--=================== WORKS ====================-->
+        <section class="works section" id="works">
+                <h2 class="section__title">Work Experience & Projects</h2>
+                <span class="section__subtitle">Most recent work</span>
+
+                <div class="works__container container swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <!--=================== WORK 1 ====================-->
+                        <div class="works__content grid swiper-slide">
+                            <img src="img/works-img1.png" alt="" class="works__img">
+
+                            <div class="works__data">
+                                <h3 class="works__title">3d-Car Animation Model</h3>
+                                <p class="works__description">
+                                    A 3D car animation model website is a platform where users 
+                                    can find high-quality 3D models of various types of cars. 
+                                    This website have a features like change color of a car.
+                                </p>
+                                <a href="https://github.com/shikhar-bot/3d-Car_Animation-Model" class="button button--flex button--small works works__button">
+                                    Repo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--=================== WORK 2 ====================-->
+                        <div class="works__content grid swiper-slide">
+                            <img src="img/works-img2.png" alt="" class="works__img">
+
+                            <div class="works__data">
+                                <h3 class="works__title">Pixel Art Studio</h3>
+                                <p class="works__description">
+                                    Pixel Art is a form of digital art created using software. 
+                                    Images are thought at the pixel level.
+                                </p>
+                                <a href="https://github.com/shikhar-bot/Pixel-Art-Studio" class="button button--flex button--small works works__button">
+                                    Repo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--=================== WORK 3 ====================-->
+                        <div class="works__content grid swiper-slide">
+                            <img src="img/works-img3.png" alt="" class="works__img">
+
+                            <div class="works__data">
+                                <h3 class="works__title">Quizz Web App</h3>
+                                <p class="works__description">
+                                    It is a platform where you 
+                                    can create quizzes for assessments and other activities.
+                                </p>
+                                <a href="https://github.com/shikhar-bot/Quiz-App" class="button button--flex button--small works works__button">
+                                    Repo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--=================== WORK 4 ====================-->
+                        <div class="works__content grid swiper-slide">
+                            <img src="img/works-img4.png" alt="" class="works__img">
+
+                            <div class="works__data">
+                                <h3 class="works__title">Myntra Clone</h3>
+                                <p class="works__description">
+                                    The Myntra clone is a website where online shoppers could see and interact with. 
+                                </p>
+                                <a href="https://github.com/shikhar-bot/Myntra-Clone" class="button button--flex button--small works works__button">
+                                    Repo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--=================== WORK 5 ====================-->
+                        <div class="works__content grid swiper-slide">
+                            <img src="img/works-img5.png" alt="" class="works__img">
+
+                            <div class="works__data">
+                                <h3 class="works__title">To-do List</h3>
+                                <p class="works__description">
+                                    A to-do list project is a task management tool that helps individuals 
+                                    or teams organize and prioritize their work. It allows users to create, 
+                                    edit, and track tasks, set deadlines, and mark them as completed when 
+                                    finished.
+                                </p>
+                                <a href="https://github.com/shikhar-bot/To-Do_List" class="button button--flex button--small works works__button">
+                                    Repo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--=================== WORK 6 ====================-->
+                        <div class="works__content grid swiper-slide">
+                            <img src="img/works-img6.png" alt="" class="works__img">
+
+                            <div class="works__data">
+                                <h3 class="works__title">Filmix</h3>
+                                <p class="works__description">
+                                    An innovative project that harnesses the power of the TMDB API to 
+                                    create a user-friendly platform, where movie enthusiasts 
+                                    can explore extensive information about films, from detailed cast and 
+                                    crew listings to ratings, reviews, and more.
+                                </p>
+                                <a href="https://github.com/shikhar-bot/Filmix" class="button button--flex button--small works works__button">
+                                    Repo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Add arrows-->
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-works-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-works-icon"></i>
+                    </div>
+
+                    <!--Add pagination-->
+                    <div class="swiper-pagination"></div>
+                </div>
+        </section>
+
+        <!--=================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="uil uil-phone contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Call Me</h3>
+                            <span class="contact__subtitle">+91 9179938812</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-envelope contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Email</h3>
+                            <span class="contact__subtitle">shikhargupta178@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-map-marker contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Location</h3>
+                            <span class="contact__subtitle">Bangalore, Karnataka</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="https://formsubmit.co/shikhargupta178@gmail.com" method="POST" class="contact__form grid">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="name" class="contact__label">Name</label>
+                            <input type="text" id="name" name="Name" class="contact__input" required>
+                        </div>
+                        <div class="contact__content">
+                            <label for="email" class="contact__label">Email</label>
+                            <input type="email" id="email" name="Email" class="contact__input" required>
+                        </div>
+                    </div>
+                    <div class="contact__content">
+                        <label for="msg" class="contact__label">Message</label>
+                        <textarea name="Message" id="msg" cols="0" rows="7" class="contact__input" placeholder="Say hello!..."></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="button button--flex">
+                            Send Message
+                            <i class="uil uil-message button__icon"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--=================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Shikhar Gupta</h1>
+                    <span class="footer__subtitle">Programmer & Frontend developer</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#about" class="footer__link">Resume</a>
+                    </li>
+                    <li>
+                        <a href="#works" class="footer__link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://www.facebook.com/shikhar.gupta.7583/" target="_blank" class="footer__social">
+                        <i class="uil uil-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/shake__her_/" target="_blank" class="footer__social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/Shikhar02665898" target="_blank" class="footer__social">
+                        <i class="uil uil-twitter-alt"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; Shikhar Gupta | All right reserved</p>
+        </div>
+    </footer>
+
+    <!--=================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!--=================== SWIPER JS ====================-->
+    <script src="swiper-bundle.min.js"></script>
+
+    <!--=================== MAIN JS ====================-->
+    <script src="script.js"></script>
+
+    <!--=================== FORM JS ====================-->
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+        function sendEmail(){
+            console.log("hello");
+            console.log(document.getElementById("msg").value,"msg")
+            console.log(document.getElementById("email").value,"email")
+            console.log(document.getElementById("name").value,"name")
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "sg.99311.sg@gmail.com",
+                Password : "4C61A5D7CEA308105CBD87E3CD7371D0FBD5",
+                To : 'shikhargupta178@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "Contact form enquiry",
+                Body : "Name :" + document.getElementById("name").value +
+                "<br> Email :" + document.getElementById("email").value + 
+                "<br> Email :" + document.getElementById("msg").value
+            }).then(
+                message => alert("message")
+            );
+        }
+    </script> -->
+</body>
+</html>
