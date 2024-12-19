@@ -48,6 +48,50 @@ skillsHeader.forEach((el) => {
     el.addEventListener('click', toggleSkills)
 })
 
+/*===================== QUALIFICATION =====================*/
+// const tabs = document.querySelectorAll('[data-target]'),
+//     tabContents = document.querySelectorAll('[data-content]')
+
+// tabs.forEach(tab => {
+//     tab.addEventListener('click', () =>{
+//         const target = document.querySelector(tab.dataset.target)
+
+//         tabContents.forEach(tabContent => {
+//             tabContent.classList.remove('qualification__active')
+//         })
+//         target.classList.add('qualification__active')
+
+//         tabs.forEach(tab => {
+//             tab.classList.remove('qualification__active')
+//         })
+//         tab.classList.add('qualification__active')
+//     })
+// })
+
+const tabs = document.querySelectorAll('[data-target]');
+const tabContents = document.querySelectorAll('[data-content]');
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        // Clear active state from all tabContents
+        tabContents.forEach(tabContent => {
+            tabContent.classList.remove('qualification__active');
+        });
+
+        // Activate the target content
+        const target = document.querySelector(tab.dataset.target);
+        target.classList.add('qualification__active');
+
+        // Clear active state from all tabs
+        tabs.forEach(tab => {
+            tab.classList.remove('qualification__active');
+        });
+
+        // Set active state for the clicked tab
+        tab.classList.add('qualification__active');
+    });
+});
+
 /*===================== WORKS SWIPER =====================*/
 let swiper = new Swiper(".works__container", {
     cssMode: true,
